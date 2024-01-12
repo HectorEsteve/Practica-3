@@ -1,0 +1,579 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a, abbr {
+    all: unset;
+}
+
+/************************************************/
+body{
+	font-family: 'Source Sans 3' ;
+	color: #000000;
+	line-height: 1.5;
+    font-size: 1 rem;
+}
+a{
+	cursor: pointer;
+	transition: color 0.3s; 
+}
+strong{
+    font-weight: bold;
+}
+
+/********************HEADER**********************/
+body>header{
+	padding: 15px 16.5% 0 16.5%;
+}
+h1{
+	font-size: 4.5rem;
+}
+.estrecho{
+	letter-spacing: -8px;
+}
+nav ul{
+	font-weight: bold;
+	display: flex;
+	font-size: 1.2rem;
+}
+body>header nav ul li{
+	padding: 10px 30px 24px 0;
+}
+nav a:hover{
+	color: rgba(0,0,0,0.5);
+}
+.actual{
+	color: rgb(222, 35, 51);
+}
+hr{
+	height: 10px; 
+	background: linear-gradient(to bottom, #F4F6F7, white); 
+	border: 0; 
+	margin: 0 -25% 0 -25%;
+
+}
+
+/***********************FOOTER**********************/
+body>footer{
+	color:white;
+    background-color: black;
+	margin-top: 55px;
+	font-size: 0.9rem;
+	padding: 50px 0 40px 16%;
+}
+body>footer>div{
+	padding: 0 0 15px 0;
+}
+body>footer>div>ul{
+	display: flex;
+	flex-direction: row;
+	padding: 5px 0;
+}
+.logos>li{
+	padding: 0 4px 0 0;
+}
+.politicas>li{
+	padding: 0 27px 0 0;
+}
+.politicas>li:not(:first-child){
+	list-style:"·    ";
+}
+.politicas>li:hover{
+	color: rgb(222, 35, 51) ;
+}
+.logos>li:hover{
+	opacity: 0.7;
+}
+
+/********************MAIN****************************/
+/*------------------index---------------------------*/
+#portada{
+	background-image: url(../img/bg-hero-home.jpg) ;
+	background-size: cover;
+    height: 475px;
+	color: white;
+	font-size: 6rem;
+	margin: 0 auto 12px auto;
+	text-align: center;
+	display: flex; /* Centrar verticalmente */
+	align-items: center; /* Centrar verticalmente */
+}
+h2{
+	padding: 0 20%;
+	line-height: 1;
+}
+h3{
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-align: center;
+	padding:30px 0 20px 0;
+	line-height: 1;
+}
+article>header+section{
+	font-size: 2rem;
+	width: 53%;
+	margin: 0 auto;
+}
+article>section>p{
+	padding: 8px 0;
+}
+article>header+section+section{
+	width: 67%;
+	margin: 0 auto;
+}
+#imagenes{
+	display: flex;
+	flex-direction:row;
+	gap:15px;
+	padding: 4px 0 30px 0;
+}
+#imagenes>div{
+	width: 33.33%;
+}
+.imagen{
+	width: 94%;
+}
+figcaption{
+	padding: 14px 0;
+}
+h4{
+	font-size: 1.75rem;
+	color: #DE2333;
+	font-weight: bold;
+	line-height: 1.3;
+}
+#imagenes>div>p{
+	font-size: 1.2rem;
+	padding: 15px 15px 0 0;
+}
+.enlace-rojo{
+	font-size: 0.8rem;
+	color: rgb(222, 35, 51) ;
+	font-weight: bold;
+}
+.enlace-rojo:hover{
+	color:rgb(0, 0, 0);
+}
+
+/*---------------------aplicaciones-------------------*/
+.bloques{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	gap:80px;
+	margin: 15px 0 0 0;
+	padding: 0 0 0 16%;
+	
+}
+.bloques>div{
+	background-color: #F4F6F7;
+	width: 325px;
+	padding: 0 30px 30px 30px;
+}
+.bloques h3{
+	text-align: left;
+	font-size: 2.25rem;
+}
+.bloques div>h3+p{
+	font-size: 1.35rem;
+	padding: 14px 0;
+}
+.enlace-rojo-grande{
+	color: rgb(222, 35, 51);
+}
+.enlace-rojo-grande:hover{
+	color: rgb(0, 0, 0) ;
+	text-decoration: underline;
+}
+
+/*---------------------en el cine-------------------*/
+.peliculas{
+	gap:23px;
+}
+.peliculas figure{
+	width: 39.5%;
+	margin: 10px 0;
+}
+.peliculas figure figcaption{
+	background-color: #F4F6F7;
+	min-height: 70px;
+	padding:20px 15px;
+}
+iframe{
+	margin: 0 0 -11px 0;
+	width: 100%;
+	height: 18.5vw;
+}
+.titulo{
+	font-weight: bold;
+	font-style: italic;
+}
+
+/*---------------------despacho42-------------------*/
+.breadcrumb {
+	padding: 40px 0 40px 0;
+}
+.breadcrumb ul {
+	font-size: 0.9rem;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.breadcrumb li:not(:last-child)::after {
+	display: inline-block;
+	margin: 0 .25rem;
+	content: ">";
+}
+#container{
+	display: flex;
+	flex-direction:row;
+	gap:100px;
+	padding: 0 0 0 16.5%;
+}
+#container>main{
+	width: 53%;
+}
+#container>main img{
+	width: 100%;
+}
+#container header figcaption{
+	font-size: 0.9rem;
+	display: flex;
+	flex-direction: row;
+	gap:10px;
+}
+#container header figcaption>p:first-child::after{
+	content: "|";
+	padding-left: 10px;
+}
+#container h3{
+	text-align: left;
+	padding: 30px 0 25px 0;
+	line-height: 1;
+}
+main main{
+	padding-right: 5px;
+}
+main main p{
+	font-size: 1.2rem;
+	padding: 9px 0;
+}
+main main h4, #tarjeta-despacho h4{
+	color: #000000;
+	padding: 7px 0;
+}
+h5{
+	font-weight: bold;
+	font-size: 1.4rem;
+	padding: 4px 0;
+}
+q::before {
+	content: "«";
+}
+q::after {
+	content: "»";
+}
+#container p .enlace-rojo-grande{
+	font-weight: bold;
+	font-style: italic;
+}
+main footer{
+	font-weight: bold;
+	font-style: italic;
+	font-size: 0.9rem;
+}
+#tarjeta-despacho{
+	display: flex;
+	flex-direction: row;
+	background-color: #F4F6F7;
+	margin: 50px 0 20px 0;
+	padding-bottom: 15px;
+
+}
+#tarjeta-despacho figure{
+	padding: 40px 25px 0 40px;
+	width: 450px;
+	height: 450px;
+}
+#tarjeta-despacho img{
+	border-radius: 25%;
+}
+#tarjeta-despacho p{
+	font-size: 1.2rem;
+	padding: 8px 45px 10px 0;
+}
+#tarjeta-despacho h3{
+	padding-top: 40px;
+}
+#tarjeta-despacho ul{
+	padding-top: 10px;
+	line-height: 1.2;
+}
+form {
+	display: flex;
+	flex-direction: column;
+}
+form div {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 38px; /* Espacio entre cada bloque de label e input */
+}
+label{
+	font-size: 1.2rem;
+}
+#container section>p{
+	font-size: 0.8rem;
+	font-weight: bold;
+	padding: 5px 0 15px 0;
+}
+input, textarea{
+	border: none;
+	background-color: #F4F6F7;
+	margin-top: -5px;
+}
+input{
+	height: 50px;
+}
+textarea{
+	height: 150px;
+}
+#privacidad{
+	display: flex;
+	flex-direction: row;
+	margin: -10px 0 15px 0;
+}
+#privacidad label{
+	margin: 5px 5px 0 0;
+}
+#boton{
+	background-color: rgb(222, 35, 51);
+	color: white;
+	height: 40px;
+	width: 235px;
+	font-size: 1.15rem;
+}
+aside{
+	margin-top: 80px;
+	display: flex;
+	flex-direction: column;
+}
+#articulos{
+	width: 67%;
+}
+#articulos>div{
+	display: flex;
+	flex-direction: row;
+	border-bottom:dotted;
+	border-color:black;
+	border-width: 1px;
+	padding: 14px 0 10px 0;
+}
+#articulos img{
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+}
+#articulos div>p:first-child{
+	font-weight: bold;
+}
+#articulos div>p{
+	padding-left: 15px;
+}
+
+
+@media (max-width: 1024px) {
+	/*header..........................................*/
+	h1{
+		text-align: center;
+	}
+	body>header>nav>ul{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		line-height: 1;
+		padding: 20px 0 30px 0;
+	}
+	body>header>nav>ul>li{
+		padding: 8px 0;
+	}
+
+	/*footer...........................................*/
+	body>footer{
+		text-align: center;
+		padding-left: 0;
+	}
+	body>footer>div>.politicas{
+		display: flex;
+		flex-direction: column;
+		padding-left: 20px;
+		font-size: 1rem;
+	}
+	.politicas>li:not(:first-child){
+		list-style:none;
+	}
+	.logos{
+		justify-content: center;
+		padding-top: 10px;
+	}
+
+	/*index.............................................*/
+	#portada{
+		height: 400px;
+	}
+	h2{
+		font-size: 4rem;
+		padding: 0 10%;
+		line-height: 1.4;
+	}
+	main>article>section{
+		width: 90%;
+	}
+	article>section>p{
+		font-size: 1.8rem;
+	}
+	article>header+section+section{
+		width: 90%;
+		margin: 0 auto;
+	}
+	#imagenes>div>p, #imagenes>div>h4{
+		padding-right: 45px;
+	}
+
+	/*aplicaciones.....................................*/
+	.bloques{
+		gap:35px;
+		padding: 0;
+		justify-content: center;
+	}
+
+	/*en el cine........................................*/
+	.peliculas{
+		display: flex;
+		flex-direction: column;
+		gap:10px;
+	}
+	.peliculas figure{
+		width: 90%;
+		margin: 10px 0;
+	}
+	iframe{
+		height: 47vw;
+	}
+
+	/*despacho42........................................*/
+	#container{
+		display: flex;
+		flex-direction:column;
+		gap:0;
+		padding: 0 5%;
+	}
+	#container>main{
+		width: 100%;
+	}
+	#tarjeta-despacho{
+		padding-bottom: 0;
+	}
+	#tarjeta-despacho figure{
+		padding: 20px 20px 0 20px;
+	}
+	#tarjeta-despacho h3{
+		padding-top: 20px;
+	}
+	#boton{
+		height: 35px;
+		width: 175px;
+		font-size: 0.9rem;
+	}
+	aside{
+		margin: 0 auto;
+		margin-top: 20px;
+		width: 65%;
+	}
+	#articulos{
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 480px) {
+	/*index.............................................*/
+	#portada{
+		height: 300px;
+	}
+	h2{
+		font-size: 2rem;
+		padding: 0 10%;
+	}
+	article>section>p{
+		font-size: 1.25rem;
+	}
+	#imagenes{
+		display: flex;
+		flex-direction:column;
+		align-items: center;
+		gap:40px;
+	}
+	#imagenes>div{
+		width: 85%;
+	}
+	#imagenes>div>p, #imagenes>div>h4{
+		padding-right: 10px;
+	}
+	
+	/*despacho42........................................*/
+
+	aside{
+		margin: 20px 2% 0 2%;
+		width: 96%;
+	}
+
+	
+
+}

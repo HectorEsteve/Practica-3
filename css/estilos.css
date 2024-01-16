@@ -67,7 +67,10 @@ strong{
 
 /********************HEADER**********************/
 body>header{
+	position: sticky;
+	top:0;
 	padding: 15px 16.5% 0 16.5%;
+	background-color: white;
 }
 h1{
 	font-size: 4.5rem;
@@ -408,12 +411,17 @@ aside{
 	width: 67%;
 }
 #articulos>div{
-	display: flex;
-	flex-direction: row;
 	border-bottom:dotted;
 	border-color:black;
 	border-width: 1px;
 	padding: 14px 0 10px 0;
+}
+#articulos>div>a{
+	display: flex;
+	flex-direction: row;
+}
+#articulos>div>a:hover{
+	color: rgba(0,0,0,0.5);
 }
 #articulos img{
 	width: 90px;
